@@ -13,6 +13,6 @@ public class CalculatorTest {
 
     @Test
     public void testSub() {
-        assertEquals(5, calculator.sub(2, 3));
+        assertEquals(3, calculator.sub(6, 3));
     }
 }
