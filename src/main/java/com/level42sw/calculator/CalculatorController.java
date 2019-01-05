@@ -16,6 +16,12 @@ public class CalculatorController {
         return String.valueOf(calculator.sum(a, b));
     }
 
+    @RequestMapping("/sub")
+    String sub(@RequestParam("a") Integer a,
+               @RequestParam("b") Integer b) {
+        return String.valueOf(calculator.sub(a, b));
+    }
+
     @RequestMapping("/mult")
     String mult(@RequestParam("a") Integer a,
                @RequestParam("b") Integer b) {
